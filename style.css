@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=Swap");
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+/*All about desktop nav*/
+#nav-button
+{
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 23px;
+  margin: 3px;
+  margin-right: 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+.nav-button:hover
+{
+  background-color: #e8ecf615;
+}
+.nav-container
+{
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 2px;
+}
+nav,
+.nav-links{
+  display: flex;
+  text-decoration: none;
+}
+nav{
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+.nav-links
+{
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+a{
+  color: #000;
+  text-decoration-line: none;
+  text-decoration-color: white;
+}
+a:hover{
+  color: rgb(255, 255, 255);
+  
+  text-underline-offset: 1rem;
+}
+
+/*All about profile image*/
+.image a
+{
+  display: flex; 
+  color: #333; 
+  font-weight: bold; 
+
+}
+
+#image a:hover {
+  color: #000; /* Change color on hover */
+}
+
+body
+{
+  background-color: #001127;
+  font-family: "Poppins",sans-serif;
+}
+
+#Information
+{
+  margin-top: 2%;
+  margin-left: 2%;
+  background-color:rgba(58, 61, 62, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  color: lightgrey;
+}
+
+.Edu-title
+{
+  margin-left: 3%;
+  margin-top: 5%;
+  color:rgb(255, 255, 255);
+  font-size: x-large;
+}
+
+.Education
+{
+  font-size: large;
+  color: lightgrey;
+  margin-left: 3%;
+}
+
+#image
+{
+  margin-top: 0%;
+}
+
+#Name
+{
+  margin-top: 4%;
+  margin-left: 3%;
+  font-size: x-large;
+  color: #ffffff;
+}
+
+#Project-Title
+{
+  margin-top: 5%;
+  font-size: x-large;
+  margin-left: 3%;
+  color: #fff;
+}
+.projects
+{
+  margin-top: 1.5%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 7%;   
+}
+  
+.project-box
+{
+  position: relative;  
+  display: inline-block; 
+  border-radius: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin: 25px; 
+  width: 350px; 
+  height:350px;  
+}
+  
+.project-popup
+{
+  position: absolute;  /* Make the pop-up position itself absolutely */
+  top: 0;  /* Position it at the top of the project box */
+  left: 0;  /* Align it to the left edge of the project box */
+  width: 350px;  /* Make it as wide as the project box */
+  height: 350px;  /* Make it as tall as the project box */
+  background-color:rgb(0, 0, 0);  /* Set a semi-transparent background color */
+  opacity: 0;   /*Hide the pop-up initially */
+  transition: opacity 0.2s ease-in-out;  /* Smooth transition on hover */
+  z-index: 10;  /* Set a higher z-index to ensure it appears above other elements */
+  color: rgb(255, 255, 255);
+  font-display:inherit;
+  text-align: center;
+  font-size: 18px;
+}
+  
+.project-box:hover .project-popup
+{
+  opacity:0.8; 
+}
+  
+@keyframes animate-image
+{
+    from { opacity: 0; }  to { opacity: 1; }
+}
+  
+
+
+.project-description
+{
+  position: absolute;  /* Make the description box position itself absolutely */
+  top: 100%;  /* Position it below the image initially */
+  left: 0;  /* Align it to the left edge of the container */
+  width: 100%;  /* Make it as wide as the container */
+  background-color: #fff;  /* Set a background color */
+  padding: 10px;  /* Add some padding */
+  opacity: 0;  /* Hide the description box initially */
+  color: darkgray;
+  transition: opacity 0.2s ease-in-out;  /* Smooth transition on hover */
+}
+  
+
+
+#skill-title
+{
+  margin-top: 5%;
+  font-size: x-large;
+  color: #fff;
+  margin-left: 3%;
+} 
+  
+.skills-container
+{
+  display: flex;  /* Adjust display property as needed */
+  flex-wrap: wrap;
+  margin-left: 3%;
+    /* Allow wrapping if needed */
+}
+  
+.skill-box
+{
+  background-color:#032957;
+  padding: 10px;
+  
+  margin: 5px;  /* Adjust margin as needed */
+  display: inline-block;
+  border-radius: 7px;
+  color: lightcyan;
+  white-space: nowrap;  /* Prevent text wrap */
+  max-width: 150px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.card-front
+{
+  margin-top: 3%;
+  color:rgb(255, 255, 255);
+  font-size: x-large;
+  margin-left: 3%; 
+}
+
+.card-back
+{
+  color: rgb(197, 211, 211);
+  font-size: large;  
+  margin-left: 3%;
+  text-decoration: none; 
+}
+a{
+  color: lightskyblue;
+  text-decoration: none;
+}
+
+.cv
+{
+  display: flex; 
+  font-size: ; 
+  flex-wrap: wrap;
+  margin-left: 3%;
+  background-color:#032957;
+  padding: 10px;
+  border: 0.5px solid #ddd;
+  display: inline-block;
+  border-radius: 7px;
+  color: lightcyan;
+  white-space: nowrap;  
+  max-width: 200px;
+  overflow:hidden;
+  height: 20px;
+  text-overflow:ellipsis;
+}
+
+.t
+{
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  color: white;
+  font-size: large;
+}
+
+/*.footer
+{
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  text-align: center; 
+}*/
